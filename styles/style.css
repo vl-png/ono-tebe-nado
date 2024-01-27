@@ -41,7 +41,7 @@
   height: 100%;
 }
 
-.header__contacts {
+.contacts {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -50,7 +50,7 @@
   padding-bottom: 2px;
 }
 
-.header__contacts-list {
+.contacts-list {
   width: 237px;
   font-style: normal;
   line-height: 1.35;
@@ -63,13 +63,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 757px;
+  min-height: 757px;
   margin-bottom: 179px;
   padding: 165px 50px 51px;
   color: #fff;
   background-color: black;
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
@@ -84,7 +85,6 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
@@ -124,7 +124,6 @@
 
 .cover__description-text {
   padding-left: 28px;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -136,9 +135,8 @@
 .bet-button {
   width: 255px;
   height: 51px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
-  font-family: Raleway;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
@@ -208,7 +206,6 @@
 .card__title {
   display: block;
   color: #fff;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
@@ -221,7 +218,6 @@
 .card__text {
   display: block;
   color: #fff;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -231,7 +227,6 @@
 .lots__look-more-link {
   padding-left: 40px;
   color: #000;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -260,7 +255,7 @@
   align-self: center;
   width: 240px;
   height: 240px;
-  border-radius: 120px;
+  border-radius: 50%;
   background-color: #000;
 }
 
@@ -275,7 +270,6 @@
   align-items: center;
   padding-top: 7px;
   color: #000;
-  font-family: Raleway;
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -285,7 +279,6 @@
 .about__text {
   grid-column: 2/4;
   color: #000;
-  font-family: Raleway;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -305,13 +298,6 @@
   font-size: 18px;
   font-style: normal;
   text-underline-position: under;
-}
-
-.footer__contacts-list {
-  width: 237px;
-  font-style: normal;
-  line-height: 1.35;
-  list-style-type: none;
 }
 
 .footer__menu {
